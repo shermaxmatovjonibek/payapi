@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+}
+.containerWork {
+  background-color: #1b262f;
+  width: 100%;
+}
+.containerFooter {
+  width: 100%;
+  background-color: #1b262f;
+}
+.wrapper {
+  width: 1240px;
+  margin: 40px auto;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 20px;
+    width: 750px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    padding: 20px;
+    width: 350px;
+    height: auto;
+  }
+}

@@ -1,0 +1,83 @@
+.simple {
+  display: flex;
+  &__texts {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 101px;
+  }
+
+  &__right {
+    display: flex;
+  }
+  &__title {
+    margin-top: 348px;
+    width: 439px;
+    height: 56px;
+    /* Simple UI & UX */
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    /* identical to box height, or 117% */
+    letter-spacing: -0.369231px;
+
+    color: #36536b;
+  }
+  &__text {
+    margin-top: 24px;
+    width: 439px;
+    height: 56px;
+    /* Our pre-built form i */
+
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 187% */
+
+    color: #6c8294;
+  }
+  &__picture-first {
+    margin-top: 166px;
+    margin-right: 40px;
+  }
+  &__picture-second {
+    margin-top: 166px;
+  }
+  background-image: url(../img/simple-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 300px;
+  &__card {
+    background-color: grey;
+    color: white;
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .simple {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .simple__right {
+      align-items: center;
+      text-align: center;
+    }
+    &__texts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .simple {
+    flex-direction: column;
+  }
+}

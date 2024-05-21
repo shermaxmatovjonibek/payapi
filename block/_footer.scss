@@ -1,0 +1,72 @@
+.footer {
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logos {
+    display: flex;
+
+    gap: 24px;
+  }
+  &__logo {
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: 164px;
+  }
+  &__list {
+    display: flex;
+    padding-left: 73px;
+    gap: 40px;
+  }
+  &__item {
+    align-items: center;
+    padding-top: 42px;
+    padding-bottom: 40px;
+    /* Pricing */
+
+    height: 18px;
+
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    color: #fbfcfe;
+
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+  &__link {
+    color: #fbfcfe;
+  }
+  &__paths {
+    margin-right: 165px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    margin-left: 400px;
+
+    gap: 24px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    margin-right: 0px;
+    width: 768px;
+    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+      padding-left: 10px;
+    }
+    &__paths {
+      display: flex;
+      margin-left: 100px;
+    }
+  }
+}

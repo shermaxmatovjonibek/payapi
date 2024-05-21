@@ -1,0 +1,154 @@
+.intro {
+  margin-top: 60px;
+  display: flex;
+  gap: 185px;
+  &__title {
+    margin-top: 152px;
+    width: 546px;
+    height: 220px;
+    /* Start building with */
+
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    /* or 100% */
+    letter-spacing: -0.553846px;
+
+    color: #36536b;
+  }
+  &__text {
+    margin-top: 16px;
+    /* Have any questions? */
+
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    color: #6c8294;
+    &-span {
+      /* Have any questions? */
+
+      font-family: "Public Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+
+      color: #6c8294;
+    }
+  }
+
+  &__input {
+    margin-top: 12px;
+    width: 445px;
+    height: 48px;
+    border: none;
+    /* Rectangle */
+
+    background: #fbfcfe;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+
+    /* Enter email address */
+
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    color: #36536b;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  &__enter {
+    position: relative;
+    width: 445px;
+    height: 48px;
+    border-radius: 24px;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 50px;
+    top: 16px;
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #ba4270;
+    color: #fff;
+    border: none;
+  }
+}
+
+header {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    &__title {
+      margin-top: -100px;
+    }
+    &__text {
+      align-items: center;
+      justify-content: center;
+      margin-left: 100px;
+    }
+  }
+  header {
+    background-image: url(../img/Bitmap.png);
+    background-size: 700px;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .intro {
+    margin-bottom: 80px;
+    &__title {
+      margin: auto;
+      margin-top: -135px;
+      text-align: center;
+      width: 327px;
+      height: 108px;
+    }
+    &__input {
+      margin-bottom: 400px;
+      margin-top: 365px;
+      width: 327px;
+      height: 48px;
+    }
+    &__btn {
+      width: 327px;
+      height: 48px;
+      align-items: center;
+      margin-top: 1260px;
+    }
+    &__enter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__text {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+      margin-top: -300px;
+    }
+  }
+}
